@@ -18,7 +18,7 @@ Ready to protect yourself from legal traps? Let's set you up! 🧑‍💻
 
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/your-username/ai-law-shield.git
+   git clone https://github.commou-inoks/ai-law-shield.git
    cd ai-law-shield
    ```
 2. **Install the dependencies**:
