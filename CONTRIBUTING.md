@@ -9,8 +9,7 @@ Hello there! 🎉 Thank you for considering contributing to **AI Law Shield**. Y
     - [Suggesting Features](#suggesting-features)
     - [Improving Documentation](#improving-documentation)
     - [Submitting Pull Requests](#submitting-pull-requests)
-2. [Project Setup](#project-setup)
-3. [Code of Conduct](#code-of-conduct)
+2. [Code of Conduct](#code-of-conduct)
 
 ---
 
