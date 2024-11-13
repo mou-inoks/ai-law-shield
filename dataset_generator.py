@@ -1,5 +1,6 @@
 import pandas as pd
 import random
+import os
 
 # Fonction pour générer des contrats avec des clauses
 def generate_contract(id_contract):
@@ -71,9 +72,11 @@ contracts = [generate_contract(i) for i in range(1, 151)]
 # Convertir en DataFrame pandas
 df = pd.DataFrame(contracts)
 
-# Sauvegarder en fichier CSV
-df.to_csv("contrats_avec_niveaux_de_danger_avec_annotations_détaillées.csv", index=False)
+# Créer le dossier 'generated' s'il n'existe pas
+os.makedirs('generated', exist_ok=True)
+
+# Sauvegarder en fichier CSV dans le dossier 'generated'
+df.to_csv("generated/contrats_avec_niveaux_de_danger_avec_annotations_détaillées.csv", index=False)
 
 # Afficher quelques exemples
 print(df.head())
-
