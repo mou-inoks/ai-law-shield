@@ -74,4 +74,4 @@ df = pd.DataFrame(contracts)
 
 os.makedirs('generated', exist_ok=True)
 
-df.to_csv("generated/contrats_avec_niveaux_de_danger_avec_annotations_détaillées.csv", index=False)
+df.to_csv("generated/contracts_with_level_of_danger.csv", index=False)
