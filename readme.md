@@ -32,15 +32,15 @@ Ready to protect yourself from legal traps? Let's set you up! 🧑‍💻
 
 ## 📂Project Structure
     ```bash
-    ai-law-shield/
-    ├── contract_analyzer.py    # Main AI analysis script
-    ├── dataset/                # Folder containing training datasets
-    ├── models/                 # Trained AI models saved here
-    ├── examples/               # Example contracts and analysis results
-    ├── requirements.txt        # Python dependencies
-    ├── README.md               # You're reading this right now!
-    ├── LICENSE                 # Open-source license info
-    └── tests/                  # Unit tests for our AI (we want it to be smart, not rogue 🤖)
+        ai-law-shield/
+        ├── contract_analyzer.py    # Main AI analysis script
+        ├── dataset/                # Folder containing training datasets
+        ├── models/                 # Trained AI models saved here
+        ├── examples/               # Example contracts and analysis results
+        ├── requirements.txt        # Python dependencies
+        ├── README.md               # You're reading this right now!
+        ├── LICENSE                 # Open-source license info
+        └── tests/                  # Unit tests for our AI (we want it to be smart, not rogue 🤖)
     ```
 
 ## 💡 How It Works
@@ -52,7 +52,7 @@ Feel free to jump in and help make this project even better! We welcome issues, 
 
 ## 📜 License
 
-This project is licensed under the MIT License, so feel free to use it, change it, or even sell it (but hey, maybe give us some credit? 😇).
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license.
 
 ## 📢 Shout-Out
 
@@ -63,3 +63,5 @@ Thanks for checking out AI Law Shield! Remember, reading the fine print just got
 Don't forget when looking at the code that i am not an engeener with 10 years of experience, my main goal is to create a project to learn ai.
 
 Ty guys <3 
+
+Made with ❤️ by 0x2e73
