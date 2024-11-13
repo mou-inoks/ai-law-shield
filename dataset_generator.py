@@ -2,7 +2,7 @@ import pandas as pd
 import random
 import os
 
-# Fonction pour générer des contrats avec des clauses
+# Function to generate clauses of contracts
 def generate_contract(id_contract):
     clauses = [
         "Le client devra payer 10 000 € dans les 30 jours suivant la signature.",
@@ -16,16 +16,15 @@ def generate_contract(id_contract):
         "L'utilisateur doit payer des frais supplémentaires en cas de retard dans le paiement sans possibilité de contestation."
     ]
     
-    # Choisir quelques clauses au hasard pour créer le texte du contrat
+    # Choose wich clause randomly to create a text with the contract
     contract_text = " ".join(random.sample(clauses, random.randint(3, 6)))
     
-    # Niveau de danger et annotation associée
+    # Level of danger and annotation level
     level_of_danger = random.randint(1, 5)
     
-    # Initialiser la liste des annotations
+    
     annotations = []
     
-    # Si le niveau de danger est 1, il n'y a pas d'annotation nécessaire
     if level_of_danger == 1:
         annotations = []
     elif level_of_danger == 2:
@@ -66,17 +65,13 @@ def generate_contract(id_contract):
         "annotation": annotations
     }
 
-# Créer une liste de 150 contrats
+# Create a list of 150 contracts 
 contracts = [generate_contract(i) for i in range(1, 151)]
 
-# Convertir en DataFrame pandas
+# Convert into Dataframe pandas 
 df = pd.DataFrame(contracts)
 
-# Créer le dossier 'generated' s'il n'existe pas
+
 os.makedirs('generated', exist_ok=True)
 
-# Sauvegarder en fichier CSV dans le dossier 'generated'
 df.to_csv("generated/contrats_avec_niveaux_de_danger_avec_annotations_détaillées.csv", index=False)
-
-# Afficher quelques exemples
-print(df.head())
